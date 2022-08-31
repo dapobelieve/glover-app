@@ -1,26 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <EventsPage />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import EventsPage from "./pages/events.vue"
 export default {
   name: "App",
-  components: {
-    HelloWorld,
+  data() {
+    return {
+      menuOpen: false
+    };
   },
+  components: {
+    EventsPage
+  }
 };
 </script>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style>
+body{
+  background: #E5E5E5;
 }
 </style>
